@@ -31,6 +31,7 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
+    <!-- aca va los componentes que se comparte entre vistas-->
   <script type="systemjs-importmap">
     {
       "imports": {
@@ -42,6 +43,7 @@
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
+    <!-- aca va los componentes standalone-->
 
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
@@ -50,7 +52,8 @@
        "@mh/root-config":"//localhost:9000/mh-root-config.js",
        "@single-spa/login": "http://localhost:4203/main.js",
        "@single-spa/register": "http://localhost:4205/main.js",
-       "@single-spa/dashboard": "http://localhost:4204/main.js"
+       "@single-spa/dashboard": "http://localhost:4204/main.js",
+       "@single-spa/table": "http://localhost:4206/main.js"
 
 
       }
